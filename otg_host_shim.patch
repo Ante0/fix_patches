@@ -10,3 +10,12 @@ index a256d381c..3a647c45c 100644
  
  # This gives the drivers access to the logbuffer.h and gvotable.h header
  subdir-ccflags-y += -I$(ROOT_DIR)/private/google-modules/bms
+diff --git a/google-modules/soc/gs/drivers/usb/Kbuild.1 b/google-modules/soc/gs/drivers/usb/Kbuild
+index 466ade047..5c716c478 100644
+--- a/google-modules/soc/gs/drivers/usb/Kbuild.1
++++ b/google-modules/soc/gs/drivers/usb/Kbuild
+@@ -7,3 +7,4 @@ obj-$(CONFIG_USB_DWC3)		+= dwc3/
+ obj-$(CONFIG_USB_XHCI_HCD)	+= host/
+ obj-$(CONFIG_USB_GADGET)	+= gadget/
+ obj-$(CONFIG_TYPEC)		+= typec/
++obj-$(CONFIG_OTG_HOST_SHIM)	+= otg_host_shim/
